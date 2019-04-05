@@ -4,7 +4,6 @@ module.exports = (sequelize, DataTypes) => {
     firstyear: DataTypes.INTEGER,
     lastyear: DataTypes.INTEGER,
     attributes: DataTypes.JSON,
-    approved: DataTypes.BOOLEAN,
     geom: DataTypes.GEOMETRY
   }, {});
   Feature.associate = function () {
