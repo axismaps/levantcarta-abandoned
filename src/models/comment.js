@@ -3,8 +3,8 @@ module.exports = (sequelize, DataTypes) => {
     text: DataTypes.TEXT,
     resolved: DataTypes.BOOLEAN
   }, {});
-  Comment.associate = function () {
-    // associations can be defined here
+  Comment.associate = (models) => {
+    Comment.belongsTo(models.Feature);
   };
   return Comment;
 };
