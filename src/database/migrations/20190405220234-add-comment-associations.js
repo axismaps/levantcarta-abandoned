@@ -12,5 +12,5 @@ module.exports = {
       onDelete: 'SET NULL',
     }
   ),
-  down: queryInterface => queryInterface.removeColumn('Comment', 'FeatureId')
+  down: queryInterface => queryInterface.removeColumn('Comments', 'FeatureId')
 };
