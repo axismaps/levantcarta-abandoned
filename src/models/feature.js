@@ -8,6 +8,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Feature.associate = (models) => {
     Feature.hasMany(models.Comment);
+    Feature.belongsTo(models.Type);
   };
   return Feature;
 };
