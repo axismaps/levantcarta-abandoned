@@ -2,8 +2,8 @@ module.exports = (sequelize, DataTypes) => {
   const Type = sequelize.define('Type', {
     name: DataTypes.STRING
   }, {});
-  Type.associate = function () {
-    // associations can be defined here
+  Type.associate = (models) => {
+    Type.belongsTo(models.Layer);
   };
   return Type;
 };
