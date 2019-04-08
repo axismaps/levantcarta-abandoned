@@ -4,6 +4,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Type.associate = (models) => {
     Type.belongsTo(models.Layer);
+    Type.belongsTo(models.Style);
   };
   return Type;
 };

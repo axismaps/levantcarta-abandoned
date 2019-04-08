@@ -10,8 +10,8 @@ module.exports = (sequelize, DataTypes) => {
     case: DataTypes.BOOLEAN,
     caseColor: DataTypes.STRING
   }, {});
-  Style.associate = function () {
-    // associations can be defined here
+  Style.associate = (models) => {
+    Style.hasMany(models.Type);
   };
   return Style;
 };
