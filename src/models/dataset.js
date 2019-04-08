@@ -2,8 +2,8 @@ module.exports = (sequelize, DataTypes) => {
   const Dataset = sequelize.define('Dataset', {
     name: DataTypes.STRING
   }, {});
-  Dataset.associate = function () {
-    // associations can be defined here
+  Dataset.associate = (models) => {
+    Dataset.hasMany(models.Layer);
   };
   return Dataset;
 };
