@@ -6,10 +6,10 @@ module.exports = {
       type: Sequelize.INTEGER,
       references: {
         model: 'Features', // name of Target model
-        key: 'id', // key in Target model that we're referencing
+        key: 'id' // key in Target model that we're referencing
       },
       onUpdate: 'CASCADE',
-      onDelete: 'SET NULL',
+      onDelete: 'SET NULL'
     }
   ),
   down: queryInterface => queryInterface.removeColumn('Comments', 'FeatureId')
