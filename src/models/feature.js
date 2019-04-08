@@ -3,7 +3,7 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.TEXT,
     firstyear: DataTypes.INTEGER,
     lastyear: DataTypes.INTEGER,
-    attributes: DataTypes.JSON,
+    fields: DataTypes.JSON,
     approved: DataTypes.BOOLEAN,
     geom: DataTypes.GEOMETRY
   }, {});
