@@ -1,0 +1,12 @@
+{
+  "generator-astro": {
+    "name": "levantcarta",
+    "apibase": "api",
+    "apiversion": "v1",
+    "version": "1.0.0",
+    "description": "Cartographic platform to enable the production of temporally accurate and illustrated maps of Levantine cities",
+    "author": "Axis Maps",
+    "src": "src",
+    "kind": "service"
+  }
+}
