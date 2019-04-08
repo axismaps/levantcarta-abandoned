@@ -6,8 +6,8 @@ module.exports = (sequelize, DataTypes) => {
     attributes: DataTypes.JSON,
     geom: DataTypes.GEOMETRY
   }, {});
-  Feature.associate = function () {
-    // associations can be defined here
+  Feature.associate = (models) => {
+    Feature.hasMany(models.Comment);
   };
   return Feature;
 };
